@@ -1,0 +1,77 @@
+.clock{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: black;
+}
+
+.clock .circle{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock .circle svg{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform: rotate(270deg);
+}
+
+.clock .circle svg circle{
+    width: auto;
+    height: auto;
+    fill: transparent;
+    stroke: rgb(134, 131, 131);
+    stroke-width: 3;
+    transform: translate(5px 5px);
+}
+
+.clock .circle svg circle:nth-child(2){
+    stroke: var(--bdr-clr);
+    stroke-dasharray: 138 ;
+}
+
+.clock div{
+    position: absolute;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-weight: 600;
+}
+
+.clock .ap{
+    font-size: 1rem;
+    position: relative;
+    margin-left: -2rem;
+}
+
+.dots{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+}
+
+.dots::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: var(--bdr-clr) ;
+    border-radius: 50%;
+    box-shadow: 0 0 2px var(--bdr-clr), 0 0 4px var(--bdr-clr);
+}
+
+@media screen and (max-width: 992px){
+    .clock{
+        gap: 12px;
+        margin-left: 1rem;
+    }
+}

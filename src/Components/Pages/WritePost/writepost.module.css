@@ -1,0 +1,145 @@
+.writePostContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.writePostImgContainer{
+    display: flex;
+    margin: 2rem 0;
+    box-shadow: 0 0  20px black;
+    border-radius: 10px;
+}
+
+.writePostImg{
+    width: 70vw;
+    height: 320px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.writeFormContaienr{
+    display: flex;
+    width: 70vw;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 5px;
+}
+
+.writeForm{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+
+.formGrp{
+    /* margin-left: 150px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.writeFormIcon{
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+}
+
+.formInputTitle{
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    background: transparent;
+}
+
+::placeholder{
+    color: #000;
+}
+
+.formInputTextarea{
+    border: none;
+    padding: 20px;
+    width: 100%;
+    font-family: 'Lora' sans-serif;
+    font-size: 1.2rem;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.formInputTitle:focus, .formInputTextarea:focus{
+    outline: none;
+}
+
+.formSubmitBtn{
+    width: 100%;
+    color: white;
+    background-color: #686de0;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px){
+    .writePostImgContainer{
+        width: 90%;
+    }
+
+    .writePostImg{
+        width: 100%;
+    }
+
+    .writeFormContaienr{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .writePostImgContainer{
+        width: 95%;
+        height: 40%;
+    }
+
+    .writePostImg{
+        width: 100%;
+        height: 100%;
+    }
+
+    .writeFormContaienr{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .writePostImgContainer{
+        width: 95%;
+        height: 40%;
+    }
+
+    .writePostImg{
+        width: 100%;
+        height: 100%;
+    }
+
+    .writeFormContaienr{
+        width: 95%;
+    }
+}

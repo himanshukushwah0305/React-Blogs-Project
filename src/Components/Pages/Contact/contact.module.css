@@ -1,0 +1,115 @@
+.contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width:80%;
+    height: 650px;
+    display: flex;
+    background: transparent;;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.leftSide{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.leftSide > .heading, .info{
+    padding: 3rem 3rem 2rem 3rem;
+}
+
+.heading > h2{
+    font-size: 2.2rem;
+    font-family: 'Lora', serif;
+}
+
+.info > p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.2rem;
+}
+
+.rightSide{
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightSide > .contactForm{
+    width: 90%;
+    height: auto;
+    display: flex;
+}
+
+.formWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.inputDiv{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.inputHandle{
+    width: 100%;
+    height: 45px;
+    padding: 1rem;
+    outline: none;
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    color: black;
+    border-bottom: 2px solid black;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.inputTextarea{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.inputTextarea > .textareaInput{
+    width: 100%;
+    outline: none;
+    height: 150px;
+    font-size: 1rem;
+    padding: 1rem;
+    resize: none;
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    color: black;
+    border-bottom: 2px solid black;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.formButton{
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: #686de0;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px){
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .leftSide{
+        border-bottom: 2px solid black;
+    }
+}

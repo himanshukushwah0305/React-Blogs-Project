@@ -1,0 +1,136 @@
+.logins{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    width:60%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper > .rightSide{
+    width: 80%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightSide > .buttons{
+    margin: 4rem 0;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons > .switchBtn{
+    width: 40%;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+    border: none;
+    background-color: rgba(106, 176, 76);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons > .active{
+    width: 40%;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+    border: none;
+    background-color: rgb(106, 176, 76);
+    box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px #000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login:active, .register:active{
+    background-color: black;
+}
+
+.loginForm, .registerForm{  /* Login and Register */
+    width: 80%;
+    margin: 1rem 0 0 0;
+    display: flex;
+}
+
+.formLogin, .formRegister{  /* Login and Register */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputForm{
+    width: 100%;
+    height: 45px;
+    padding: 12px;
+    margin-bottom: 1.5rem;
+    outline: none;
+    color: black;
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+}
+
+.forget{   /* Login and Register */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
+.termcondition{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.forget > span, .termcondition > span{  /* Login and Register */
+    font-size: 16px;
+}
+
+.forget > span > input, .termcondition > span > input{  /* Login and Register */
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #686de0;
+}
+
+.forget > span > a{
+    text-decoration: none;
+}
+.forget > span > a:hover{
+    text-decoration: underline;
+}
+
+.loginFormButton, .registerFormButton{  /* Login and Register */
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: #686de0;
+    color: white;
+    cursor: pointer;
+}
+
+.bottomLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem 0 1rem 0;
+}
